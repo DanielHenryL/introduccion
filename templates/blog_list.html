@@ -1,1 +1,17 @@
-estamos en mi blog
+estamos en mi blog 
+<br>
+
+<table>
+    <tr>
+        <th scope="col">titulo</th>
+    </tr>
+    {% for post in posts %}
+    <tr> 
+        <td>{{post.title}}</td>
+        <td><a href="{% url 'blog:blog_detail' post.pk %}">Ver post {{post.pk}}</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+<a href="{% url 'blog:blog_create' %}">Puedes crear un blog new</a>
