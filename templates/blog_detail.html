@@ -1,0 +1,10 @@
+{{post.title}}
+<br>
+{{post.content}}
+<br>
+
+<form method="POST">
+    {% csrf_token %}
+    <a href="{% url 'blog:blog_update' post.pk %}"> Actualizar</a>
+    <a href="{% url 'blog:blog_delete' post.pk %}">Eliminar</a>
+</form>
