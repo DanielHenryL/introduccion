@@ -1,2 +1,7 @@
-Visita mi 
-<a href="{% url 'blog:blog_list' %}">blog aqui</a>
+{% extends 'base.html' %}
+
+{% block content %}
+    Visita mi 
+    <a class="text-blue-500" href="{% url 'blog:blog_list' %}" >blog aqui</a>
+{% endblock content %}
+    
