@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'theme',
     'django_browser_reload',
     'users',
+    'posts',
 ]
 
 TAILWIND_APP_NAME = 'theme'
